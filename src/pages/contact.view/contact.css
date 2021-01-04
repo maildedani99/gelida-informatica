@@ -1,0 +1,11 @@
+.container {
+}
+.margin10 {
+    margin-top: 15rem;
+}
+.justify-button {
+    justify-content: space-between;
+    align-content: space-between;
+    display: flex;
+    flex-direction: row ;
+}

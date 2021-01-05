@@ -6,6 +6,14 @@
     height: auto;
     align-content: center;
 }
+
+.__card_header {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 .__icon_title{
     margin-top: 2rem;
     font-size: 1.6rem;

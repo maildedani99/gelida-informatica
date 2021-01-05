@@ -8,18 +8,23 @@ import './navbar.css';
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-sm bg-primary justify-content-center fixed-top  navbar-dark">
-      <Link to={LANDING}>
-        <a class="navbar-brand"><img src={logo} alt="logo" width="500" /></a>
+    <nav class="navbar  bg-primary justify-content-center fixed-top  navbar-dark">
+      <div className="container-navbar">
+      <div className="row1 ">
+      <Link className="mx-auto" to={LANDING}>
+        <img src={logo} alt="logo" width="500" />
       </Link>
+      </div>
+      <div>
+
       <ul class="navbar-nav navbar-right ">
         <div className=" div-link ">
           
         <li class="nav-item ">
-          <a class="nav-link text-capitalize">
+          <span class="nav-link text-capitalize">
             <FaMapMarkerAlt className="icon" />
             del sol 3 08790 Gelida - Barcelona
-          </a>
+          </span>
         </li>
         <li class="nav-item">
           <a class="nav-link text-capitalize">
@@ -33,6 +38,8 @@ const Navbar = () => {
         </li>
         </div>
         </ul>
+      </div>
+      </div>
 
     </nav>
   );

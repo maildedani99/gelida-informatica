@@ -4,17 +4,19 @@
     width: 100%;
 }
 .__main {
+    width: 100%;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .__paragraf_div {
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
-    width: 100%;
+    width: 80%;
     align-items: center;
 }
 .__paragraf {
@@ -24,6 +26,7 @@
     width: 60%;
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: 2.8rem;
 }
 .__info_div {
     margin-top: 6rem;

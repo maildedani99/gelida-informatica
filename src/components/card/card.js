@@ -11,8 +11,10 @@ const Card = (props) => {
     const { img, title, content } = props;
     return (
         <div className={styles.__card}>
-            <img className={styles.__icon} src={img} alt="imagen"/>
-            <p className={styles.__icon_title} >{title}</p>
+            <div className={styles.__card_header}>
+                <img className={styles.__icon} src={img} alt="imagen"/>
+                <p className={styles.__icon_title} >{title}</p>
+            </div>
             <p className={styles.__icon_content}>{content}</p>
         </div>
     )

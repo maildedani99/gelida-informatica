@@ -1,38 +1,42 @@
-import React from 'react';
-import './contact.css';
-import { useHistory } from 'react-router-dom';
-import { LANDING } from '../../routes.js';
+import React from "react";
+import styles from './contact.module.css';
+import { useHistory } from "react-router-dom";
+import { LANDING } from "../../routes.js";
 
 const Contact = () => {
+  const history = useHistory();
 
-    const history = useHistory();
+  const goToLanding = () => {
+    history.push(LANDING);
+  };
 
-    const goToLanding = () => {
-        history.push(LANDING);
-    }
-
-    return (
-      <div className="container">
-    <div className="w-50 mx-auto h5  margin10">
-      <div className="form-group form-dangerous mt-5">
-        <label htmlFor="mane">Nombre</label>
-        <input type="text" className="form-control" id="usr" /> 
-      </div>
-      <div className="form-group">
-        <label htmlFor="email">Email</label>
-        <input type="password" className="form-control" id="pwd" />
-      </div>
-      <div className="form-group">
-        <label htmlFor="text">Escribenos</label>
-        <textarea className="form-control" name="text" id="" cols="30" rows="10" />
-          </div>
-          <div className="form-group justify-button">
-                    <button className="  btn btn-xm btn-primary w-25 mx-auto mt-3" >Enviar</button>
-              <button className="  btn btn-xm btn-danger w-25 mx-auto mt-3" onClick={goToLanding} >Cancelar</button>
-                    
-          </div>
+  return (
+    <>
+    <div class="form-group w-75 mx-auto">
+      <input
+        type="text"
+        class="form-control mt-2"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Nombre"
+      />
+      <input
+        type="email"
+        class="form-control mt-2"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Email"
+      />
+      <input
+        type="telf"
+        class="form-control mt-2"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Telf"
+      />
+      <textarea class="form-control mt-2"  placeholder="Escribenos aqui..." id="exampleTextarea" rows="3"></textarea>
     </div>
-    </div>
+    </>
   );
 };
 export default Contact;
